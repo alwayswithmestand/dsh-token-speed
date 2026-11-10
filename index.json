@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "title": {
+    "en": "dsh-token-speed",
+    "zh": "实时 Token 速度"
+  },
+  "description": {
+    "en": "Live token throughput meter for the DeepSeek Harness Web chat composer.",
+    "zh": "DeepSeek Harness Web 对话框下方的实时 Token 吞吐表。"
+  },
+  "metadata": {
+    "categories": {
+      "ui": {
+        "title": {
+          "en": "UI",
+          "zh": "界面"
+        }
+      }
+    },
+    "labels": {},
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-token-speed",
+      "title": {
+        "en": "Live token speed",
+        "zh": "实时 Token 速度"
+      },
+      "description": {
+        "en": "Streaming output speed, live output token count, and prompt tokens under the composer, with a details panel.",
+        "zh": "在输入框下方实时显示输出速度、输出 Token 数和本轮输入 Token 数，点击展开详情面板。"
+      },
+      "author": "alwayswithmestand",
+      "homepage": "https://github.com/alwayswithmestand/dsh-token-speed",
+      "repository": {
+        "url": "https://github.com/alwayswithmestand/dsh-token-speed"
+      },
+      "icon": "https://raw.githubusercontent.com/alwayswithmestand/dsh-token-speed/main/icon.svg",
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "token",
+          "speed",
+          "throughput",
+          "composer",
+          "tokens"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1794331538,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}

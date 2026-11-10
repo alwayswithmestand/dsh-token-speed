@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Live token speed",
+    "description": "Real-time token throughput under the chat composer: output speed, live output tokens, and the prompt's input tokens."
+  }
+}

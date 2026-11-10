@@ -1,0 +1,67 @@
+{
+  "name": "dsh-token-speed",
+  "version": "1.0.0",
+  "description": "Live token throughput meter under the DeepSeek Harness chat composer: streaming output speed, live output tokens, and prompt token counts.",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "token",
+    "tokens",
+    "speed",
+    "throughput",
+    "ui"
+  ],
+  "author": "alwayswithmestand",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alwayswithmestand/dsh-token-speed.git"
+  },
+  "homepage": "https://github.com/alwayswithmestand/dsh-token-speed#readme",
+  "bugs": {
+    "url": "https://github.com/alwayswithmestand/dsh-token-speed/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "locale/*.json"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check client.js",
+    "pack:check": "npm pack --dry-run",
+    "prepublishOnly": "npm run check"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-chat"
+      ]
+    }
+  }
+}

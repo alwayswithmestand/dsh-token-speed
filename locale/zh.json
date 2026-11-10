@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "实时 Token 速度",
+    "description": "在对话输入框下方实时显示 Token 吞吐：输出速度、实时输出 Token 数，以及本轮输入 Token 数。"
+  }
+}
